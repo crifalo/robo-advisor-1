@@ -37,7 +37,7 @@
                                 {{ form_errors(form.transferInformation.is_firm_not_appear) }}
                                 <label class="checkbox" for="{{ form.transferInformation.is_firm_not_appear.vars.id }}">
                                     {{ form_widget(form.transferInformation.is_firm_not_appear) }}
-                                    <span class="help-block">The name of the firm does not appear in the available choices.</span>
+                                    {#<span class="help-block">The name of the firm does not appear in the available choices.</span>#}
                                 </label>
                             </div>
                         </div>
@@ -87,9 +87,9 @@
             {% spaceless %}
                 <strong>
                     {% if group == 'employer_retirement' %}
-                        Will you be making contributions to this account?
+                        Will you be making contributions to this account? 
                     {% else %}
-                        Will you be making contributions or withdrawing money from the account?
+                        Will you be making contributions or withdrawing money from the account? 
                     {% endif %}
                 </strong>
             {% endspaceless %}

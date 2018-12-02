@@ -72,7 +72,38 @@ class LoadCecRiaData extends AbstractFixture implements OrderedFixtureInterface,
             'sequence' => 3,
             'answers' => [
                 1 => ['answer_index' => 1, 'point' => -5],
-                ['answer_index' => 2, 'point' => 5],
+                ['answer_index' => 2, 'point' => 0],
+                ['answer_index' => 3, 'point' => 3],
+                ['answer_index' => 4, 'point' => 5],
+            ],
+        ],
+        [
+            'question_index' => 5,
+            'sequence' => 4,
+            'answers' => [
+                1 => ['answer_index' => 1, 'point' => -2],
+                ['answer_index' => 2, 'point' => 0],
+                ['answer_index' => 3, 'point' => 3],
+                ['answer_index' => 4, 'point' => 5],
+            ],
+        ],
+        [
+            'question_index' => 6,
+            'sequence' => 5,
+            'answers' => [
+                1 => ['answer_index' => 1, 'point' => -4],
+                ['answer_index' => 2, 'point' =>-2],
+                ['answer_index' => 3, 'point' => 2],
+                ['answer_index' => 4, 'point' => 4],
+            ],
+        ],
+        [
+            'question_index' => 7,
+            'sequence' => 6,
+            'answers' => [
+                1 => ['answer_index' => 1, 'point' => -4],
+                ['answer_index' => 2, 'point' => 0],
+                ['answer_index' => 3, 'point' => -4],
             ],
         ],
     ];
@@ -86,34 +117,34 @@ class LoadCecRiaData extends AbstractFixture implements OrderedFixtureInterface,
         'is_assumption_locked' => 1,
         'models' => [
             [
-                'name' => 'Webo 100% Stocks',
+                'name' => '90% Stocks / 10% Funds',
                 'index' => 'webo_100_stocks',
                 'risk_rating' => 4,
                 'is_assumption_locked' => 0,
                 'entities' => [
-                    ['asset_class_index' => 0, 'subclass_index' => 0, 'security' => 'VTI', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => 'IVV', 'percent' => 30],     // id: 46
+                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'MSHQX', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => 'IVV', 'percent' => 20],     // id: 46
                     ['asset_class_index' => 0, 'subclass_index' => 1, 'security' => 'VTV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 10],  // id: 47
-                    ['asset_class_index' => 0, 'subclass_index' => 2, 'security' => 'IJR', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 15],  // id: 48
-                    ['asset_class_index' => 2, 'subclass_index' => 1, 'security' => 'VNQ', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 5],  // id: 49
-                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'VEA', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 20],  // id: 50
-                    ['asset_class_index' => 1, 'subclass_index' => 4, 'security' => 'VWO', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 10], // id: 51
-                    ['asset_class_index' => 1, 'subclass_index' => 2, 'security' => 'VSS', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 10],  // id: 52
+                    ['asset_class_index' => 0, 'subclass_index' => 2, 'security' => 'HSGBDAI:HK', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 10],  // id: 48
+                    ['asset_class_index' => 2, 'subclass_index' => 1, 'security' => 'FLEUSTI', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 5],  // id: 49
+                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'SHSAX', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 20],  // id: 50
+                    ['asset_class_index' => 1, 'subclass_index' => 4, 'security' => 'VWO', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 20], // id: 51
+                    ['asset_class_index' => 1, 'subclass_index' => 2, 'security' => 'WFUSLCA', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 15],  // id: 52
                 ],
             ],
             [
-                'name' => 'Webo 30% Stocks',
+                'name' => '30% Stocks',
                 'index' => 'webo_30_stocks',
                 'risk_rating' => 1,
                 'is_assumption_locked' => 1,
                 'entities' => [
-                    ['asset_class_index' => 0, 'subclass_index' => 0, 'security' => 'VTI', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => 'IVV', 'percent' => 20],     // id: 53
+                    ['asset_class_index' => 0, 'subclass_index' => 0, 'security' => 'MSHQX', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => 'IVV', 'percent' => 20],     // id: 53
                     ['asset_class_index' => 3, 'subclass_index' => 0, 'security' => 'BND', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => 'VCIT', 'percent' => 40],   // id: 54
                     ['asset_class_index' => 3, 'subclass_index' => 1, 'security' => 'BSV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 30], // id: 55
-                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'VEA', 'muni_substitution_security' => 'SHM', 'tax_loss_harvesting_security' => null, 'percent' => 10],    // id: 56
+                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'SHSAX', 'muni_substitution_security' => 'SHM', 'tax_loss_harvesting_security' => null, 'percent' => 10],    // id: 56
                 ],
             ],
             [
-                'name' => 'Webo 80/20',
+                'name' => '80% Stocks / 20% Bonds',
                 'index' => 'webo_80_20',
                 'risk_rating' => 3,
                 'is_assumption_locked' => 0,
@@ -121,46 +152,46 @@ class LoadCecRiaData extends AbstractFixture implements OrderedFixtureInterface,
                     ['asset_class_index' => 3, 'subclass_index' => 0, 'security' => 'BND', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 20],  // id: 156
                     ['asset_class_index' => 2, 'subclass_index' => 0, 'security' => 'DBC', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4],   // id: 157
                     ['asset_class_index' => 1, 'subclass_index' => 4, 'security' => 'VWO', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 5.6], // id: 158
-                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'VEA', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6],    // id: 159
+                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'SHSAX', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6],    // id: 159
                     ['asset_class_index' => 1, 'subclass_index' => 1, 'security' => 'EFV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 7.2],  // id: 160
                     ['asset_class_index' => 2, 'subclass_index' => 2, 'security' => 'RWX', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6],   // id: 161
-                    ['asset_class_index' => 1, 'subclass_index' => 2, 'security' => 'VSS', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6],    // id: 162
+                    ['asset_class_index' => 1, 'subclass_index' => 2, 'security' => 'WFUSLCA', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6],    // id: 162
                     ['asset_class_index' => 1, 'subclass_index' => 3, 'security' => 'SCZ', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 7.2],  // id: 163
                     ['asset_class_index' => 0, 'subclass_index' => 0, 'security' => 'IVV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6.4],  // id: 164
-                    ['asset_class_index' => 0, 'subclass_index' => 1, 'security' => 'VTV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 9.6],  // id: 165
-                    ['asset_class_index' => 2, 'subclass_index' => 1, 'security' => 'VNQ', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6],   // id: 166
-                    ['asset_class_index' => 0, 'subclass_index' => 2, 'security' => 'IJR', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6.4],  // id: 167
+                    ['asset_class_index' => 1, 'subclass_index' => 1, 'security' => 'VTV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 9.6],  // id: 165
+                    ['asset_class_index' => 2, 'subclass_index' => 1, 'security' => 'FLEUSTI', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6],   // id: 166
+                    ['asset_class_index' => 0, 'subclass_index' => 2, 'security' => 'HSGBDAI:HK', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 6.4],  // id: 167
                     ['asset_class_index' => 0, 'subclass_index' => 3, 'security' => 'IJS', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 9.6],  // id: 167
                 ],
             ],
-[
+            [
                 'name' => 'Rick Ferri Two Fund Portfolio',
                 'index' => 'rf_two_fund_portfolio',
                 'risk_rating' => 3,
                 'is_assumption_locked' => 0,
                 'entities' => [
                     ['asset_class_index' => 3, 'subclass_index' => 0, 'security' => 'BND', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 40],
-                    ['asset_class_index' => 0, 'subclass_index' => 0, 'security' => 'VTI', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 60],
+                    ['asset_class_index' => 0, 'subclass_index' => 0, 'security' => 'MSHQX', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 60],
                 ],
             ],
             [
-                'name' => 'Webo 60/40',
+                'name' => '60% Stocks / 40% Bonds',
                 'index' => 'webo_60_40',
                 'risk_rating' => 2,
                 'is_assumption_locked' => 0,
                 'entities' => [
                     ['asset_class_index' => 3, 'subclass_index' => 0, 'security' => 'BND', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 40],  // id: 169
-                    ['asset_class_index' => 2, 'subclass_index' => 0, 'security' => 'DBC', 'muni_substitution_security' => 'VTI', 'tax_loss_harvesting_security' => null, 'percent' => 3],   // id: 170
+                    ['asset_class_index' => 2, 'subclass_index' => 0, 'security' => 'DBC', 'muni_substitution_security' => 'MSHQX', 'tax_loss_harvesting_security' => null, 'percent' => 3],   // id: 170
                     ['asset_class_index' => 1, 'subclass_index' => 4, 'security' => 'VWO', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.2], // id: 171
-                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'VEA', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.5],  // id: 172
+                    ['asset_class_index' => 1, 'subclass_index' => 0, 'security' => 'SHSAX', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.5],  // id: 172
                     ['asset_class_index' => 1, 'subclass_index' => 1, 'security' => 'EFV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 5.4],  // id: 173
                     ['asset_class_index' => 2, 'subclass_index' => 2, 'security' => 'RWX', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.5], // id: 174
-                    ['asset_class_index' => 1, 'subclass_index' => 2, 'security' => 'VSS', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.5],  // id: 175
+                    ['asset_class_index' => 1, 'subclass_index' => 2, 'security' => 'WFUSLCA', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.5],  // id: 175
                     ['asset_class_index' => 1, 'subclass_index' => 3, 'security' => 'SCZ', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 5.4],  // id: 176
                     ['asset_class_index' => 0, 'subclass_index' => 0, 'security' => 'IVV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.8],  // id: 177
-                    ['asset_class_index' => 0, 'subclass_index' => 1, 'security' => 'VTV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 7.2],  // id: 178
-                    ['asset_class_index' => 2, 'subclass_index' => 1, 'security' => 'VNQ', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.5], // id: 179
-                    ['asset_class_index' => 0, 'subclass_index' => 2, 'security' => 'IJR', 'muni_substitution_security' => 'DBC', 'tax_loss_harvesting_security' => null, 'percent' => 4.8],  // id: 180
+                    ['asset_class_index' => 1, 'subclass_index' => 1, 'security' => 'VTV', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 7.2],  // id: 178
+                    ['asset_class_index' => 2, 'subclass_index' => 1, 'security' => 'FLEUSTI', 'muni_substitution_security' => null, 'tax_loss_harvesting_security' => null, 'percent' => 4.5], // id: 179
+                    ['asset_class_index' => 0, 'subclass_index' => 2, 'security' => 'HSGBDAI:HK', 'muni_substitution_security' => 'DBC', 'tax_loss_harvesting_security' => null, 'percent' => 4.8],  // id: 180
                     ['asset_class_index' => 0, 'subclass_index' => 3, 'security' => 'IJS', 'muni_substitution_security' => 'BND', 'tax_loss_harvesting_security' => null, 'percent' => 7.2],  // id: 181
                 ],
             ],

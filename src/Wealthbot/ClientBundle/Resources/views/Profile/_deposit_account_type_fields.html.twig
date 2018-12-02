@@ -7,13 +7,13 @@
         {% set new_label = 'Joint Investment Account' %}
         {% set new_sub_label = 'A taxable joint account with rights of survivorship.' %}
 
-    {% elseif type.vars.label == 'Roth IRA' %}
+    {#{% elseif type.vars.label == 'Roth IRA' %}
         {% set new_label = 'Roth IRA' %}
         {% set new_sub_label = 'A tax-free retirement account. Contributions are not tax-deductible.' %}
 
     {% elseif type.vars.label == 'Traditional IRA' %}
         {% set new_label = 'Traditional IRA' %}
-        {% set new_sub_label = 'A tax-deferred retirement account. Contributions may be tax-deductible.' %}
+        {% set new_sub_label = 'A tax-deferred retirement account. Contributions may be tax-deductible.' %}#}
 
     {% endif %}
 

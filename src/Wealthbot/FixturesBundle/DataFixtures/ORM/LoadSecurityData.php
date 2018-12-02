@@ -21,10 +21,10 @@ class LoadSecurityData extends AbstractFixture implements OrderedFixtureInterfac
 {
     private $securities = [
         [
-            'name' => 'Vanguard Total Stock Market ETF',
-            'symbol' => 'VTI',
+            'name' => 'BlackRock Total Return Fund Service Shares',
+            'symbol' => 'MSHQX',
             'security_type' => 'EQ',
-            'exp_ratio' => 0.06,
+            'exp_ratio' => 0.0076,
         ],
         [
             'name' => 'iShares S&P 500 Index',
@@ -39,10 +39,10 @@ class LoadSecurityData extends AbstractFixture implements OrderedFixtureInterfac
             'exp_ratio' => 0.1,
         ],
         [
-            'name' => 'iShares S&P SmallCap 600 Index Fund',
-            'symbol' => 'IJR',
+            'name' => 'Hang Seng Investment Series - Global Bond Fund',// replace with hang seng index
+            'symbol' => 'HSGBDAI:HK',
             'security_type' => 'EQ',
-            'exp_ratio' => 0.2,
+            'exp_ratio' => 0.01,
         ],
         [
             'name' => 'iShares S&P SmallCap 600 Value Index',
@@ -51,10 +51,10 @@ class LoadSecurityData extends AbstractFixture implements OrderedFixtureInterfac
             'exp_ratio' => 0.25,
         ],
         [
-            'name' => 'Vanguard Europe Pacific ETF',
-            'symbol' => 'VEA',
+            'name' => 'BlackRock Health Sciences Opportunities Portfolio Investor A Shares',//replace with blkrock
+            'symbol' => 'SHSAX',
             'security_type' => 'EQ',
-            'exp_ratio' => 0.12,
+            'exp_ratio' => 0.0019,
         ],
         [
             'name' => 'iShares MSCI EAFE Value Index',
@@ -63,10 +63,10 @@ class LoadSecurityData extends AbstractFixture implements OrderedFixtureInterfac
             'exp_ratio' => 0.4,
         ],
         [
-            'name' => 'Vanguard FTSE All-Wld ex-US SmCp Idx ETF',
-            'symbol' => 'VSS',
+            'name' => 'Wells Fargo (Lux) Worldwide Fund - U.S. Large Cap Growth Fund',//replace with wells fargo
+            'symbol' => 'WFUSLCA',
             'security_type' => 'EQ',
-            'exp_ratio' => 0.28,
+            'exp_ratio' => 0.0092,
         ],
         [
             'name' => 'iShares MSCI EAFE Small Cap Index',
@@ -75,7 +75,7 @@ class LoadSecurityData extends AbstractFixture implements OrderedFixtureInterfac
             'exp_ratio' => 0.4,
         ],
         [
-            'name' => 'Vanguard Emerging Markets Stock ETF',
+            'name' => 'Vanguard Emerging Markets Stock ETF', 
             'symbol' => 'VWO',
             'security_type' => 'EQ',
             'exp_ratio' => 0.2,
@@ -87,10 +87,10 @@ class LoadSecurityData extends AbstractFixture implements OrderedFixtureInterfac
             'exp_ratio' => 0.75,
         ],
         [
-            'name' => 'Vanguard REIT Index ETF',
-            'symbol' => 'VNQ',
+            'name' => 'JPMorgan Funds - US Technology Fund A',//replace with jpm tech
+            'symbol' => 'FLEUSTI',
             'security_type' => 'EQ',
-            'exp_ratio' => 0.1,
+            'exp_ratio' => 0.0179,
         ],
         [
             'name' => 'SPDR Dow Jones Intl Real Estate',

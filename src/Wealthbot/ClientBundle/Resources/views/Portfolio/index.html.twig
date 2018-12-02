@@ -19,10 +19,13 @@
                 <a class="btn btn-default"  id="reg_save_btn" href="{{ path('fos_user_security_logout') }}">Logout</a>
                 <span class="help-block">We'll save your progress.</span>
             </div>
+            <div class="form-actions">
+                <a class="btn btn-inverse" href="{{ path('rx_client_profile_step_three') }}">Back to Step 3</a>
+            </div>
         {% endif %}
     {% else %}
         <div class="row">
-            <div class="col-md-12 centered-flashes">
+            <div class="col-md-12">
                 {{ parent() }}
                 <div class="alert alert-success">
                     Congratulations! We have been notified you have reached this stage of the process and will contact you shortly to discuss your portfolio with you.
@@ -32,6 +35,9 @@
             <div class="save-and-logout">
                 <a class="btn btn-default"  id="reg_save_btn" href="{{ path('fos_user_security_logout') }}">Logout</a>
                 <span class="help-block">We'll save your progress.</span>
+            </div>
+            <div class="form-actions">
+                <a class="btn btn-inverse" href="{{ path('rx_client_profile_step_three') }}">Back to Step 3</a>
             </div>
         </div>
     {% endif %}

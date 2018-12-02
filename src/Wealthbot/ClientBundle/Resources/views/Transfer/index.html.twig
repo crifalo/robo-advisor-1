@@ -23,7 +23,7 @@
 
         <div class="row margin-top-25">
             <div class="col-md-10">
-                <img class="img-rounded w200h100" src="{{ path('rx_file_download', {'ria_id': client.ria.id}) }}"/>
+                <img class="img-rounded w200h100" src="{{ ria_logo is defined and ria_logo ? ria_logo : '/img/1.png' }}" alt=""/>
             </div>
             <div class="save-and-logout">
                 {% if app.request.attributes.get('_route') != 'rx_client_transfer' %}

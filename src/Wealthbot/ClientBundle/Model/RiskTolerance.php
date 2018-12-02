@@ -115,7 +115,7 @@ class RiskTolerance
      */
     private function calculatePoints()
     {
-        $points = 50;
+        $points = 0;
 
         foreach ($this->userAnswers as $userAnswer) {
             $points += $userAnswer->getAnswer()->getPoint();

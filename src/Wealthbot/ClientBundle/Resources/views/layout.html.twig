@@ -1,6 +1,9 @@
 {% extends '::base.html.twig' %}
 
 {% block headernav %}
+	<div class="col-md-8">
+        <div class="logo-ce-login center-text"><img class="img-responsive" src="{{ ria_logo is defined and ria_logo ? ria_logo : '/img/1.png' }}"></div>
+    </div>
 	<div class="navbar  navbar-default">
 		<div class="navbar-inner">
 			<div class="container-fluid">
